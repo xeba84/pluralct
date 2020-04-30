@@ -138,7 +138,6 @@ header .navbar {
      -moz-border-radius: 2px;
 		  border-radius: 2px;
 	cursor: pointer;
-	font-size: x-small;
 }
 .navbar .nav li.active ul li a {
 	background:#fff;
@@ -2331,14 +2330,10 @@ section#subintro{
 }
 
 @media (max-width: 767px) {
-
-
 	.navbar .navbar-inner .container .logo {
     padding-left: 20px;
     padding-right: 20px;
 	}
-
-
 	section#intro{
 		max-width: 100%;
 		margin: 0 auto;
@@ -2346,6 +2341,14 @@ section#subintro{
 		margin-bottom:20px;
 		padding-top:0;
 	}
+	.nav li.active a {
+		font-size: 11px;
+	}	
+	
+	/* div nav ul a {
+		background-color: orangered;
+		font-size: xx-large;
+	} */
 
 	/* div nav ul {
 		display:none;
