@@ -19,6 +19,27 @@ jQuery(document).ready(function($) {
     return false;
   });
 
+  $('#liSomos').click(function() {
+    $("html, body").animate({
+      scrollTop: $("#divSomos").offset().top
+    }, 800);
+    return false;
+  });
+  $('#liAreasTrabajo').click(function() {
+    $("html, body").animate({
+      scrollTop: $("#divAreasTrabajo").offset().top
+    }, 800);
+    return false;
+  });
+  $('#liContacto').click(function() {
+    $("html, body").animate({
+      scrollTop: $("#divContacto").offset().top
+    }, 800);
+    return false;
+  });
+
+
+
   // accordion
   $('.accordion').on('show', function(e) {
     $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
@@ -50,16 +71,18 @@ jQuery(document).ready(function($) {
   $("<option />", {
     "selected": "selected",
     "value": "",
-    "text": "Go to..."
+    "text": "Ir a..."
   }).appendTo("nav select");
 
   // Populate dropdown with menu items
-  $("nav a").each(function() {
+  $("nav li").each(function() {
     var el = $(this);
     $("<option />", {
       "value": el.attr("href"),
       "text": el.text()
     }).appendTo("nav select");
+    //el.click();
+    console.log("ID: ", el.attr("id"));
   });
 
   // To make dropdown actually work

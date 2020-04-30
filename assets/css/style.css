@@ -27,7 +27,7 @@ iframe {
 	border:none;
 }
 .row {
-	margin-bottom:30px;
+	margin-bottom:60px;
 }
 
 .left {
@@ -136,7 +136,9 @@ header .navbar {
 	color:#fff;
   -webkit-border-radius: 2px;
      -moz-border-radius: 2px;
-          border-radius: 2px;
+		  border-radius: 2px;
+	cursor: pointer;
+	
 }
 .navbar .nav li.active ul li a {
 	background:#fff;
@@ -2345,7 +2347,7 @@ section#subintro{
 		padding-top:0;
 	}
 
-	div nav ul {
+	/* div nav ul {
 		display:none;
 	}
 	nav ul li {
@@ -2369,7 +2371,7 @@ section#subintro{
     nav select  a {
 		line-height:1.6em;
 		outline:0;
-    }
+    } */
   section#subintro {
     padding-left: 20px;
     padding-right: 20px;
@@ -2446,7 +2448,7 @@ section#subintro{
 
 @media (max-width: 480px) {
 
-    nav select {
+    /* nav select {
       display: inline-block;
 	  width:85%;
 	  float:none;
@@ -2457,7 +2459,7 @@ section#subintro{
      -moz-border-radius: 4px;
           border-radius: 4px;
 		font-size:14px;
-	}
+	} */
 
 	#sequence {
 		height: 250px;

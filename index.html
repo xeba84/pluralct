@@ -45,41 +45,41 @@
             <div class="navigation">
               <nav>
                 <ul class="nav topnav">
-                  <li class="active">
-                    <!-- <a href="index.html"> -->
-                    <a href="#">
+                  <!-- <li class="active">
+                    <a href="#top">
                       <i class="icon-home"></i> Inicio </a>
-                  </li>
-                  <li>
+                  </li> -->
+                  <li class="active" id="liSomos">
                     <!-- <a href="about.html"> -->
-                    <a href="#">
-                      <i class="icon-leaf"></i> Quienes Somos </a>
+                    <a>
+                      <i class="icon-user"></i> Quienes Somos
+                    </a>
                   </li>
-                  <li class="dropdown">
-                    <a href="#"><i class="icon-briefcase"></i> Areas de Trabajo <i class="icon-angle-down"></i></a>
-                    <ul class="dropdown-menu">
+                  <li class="active" id="liAreasTrabajo">
+                    <a>
+                      <i class="icon-briefcase"></i> Areas de Trabajo
+                      <!-- <i class="icon-angle-down"></i> -->
+                    </a>
+                    <!-- <ul class="dropdown-menu">
                       <li>
                         <a href="#">
-                          <!-- <a href="portfolio-2cols.html"> -->
                           Calidad Turística</a></li>
                       <li>
-                        <!-- <a href="portfolio-3cols.html"> -->
                         <a href="#">
                           Co-creación de Experiencias</a></li>
                       <li>
-                        <!-- <a href="portfolio-4cols.html"> -->
                         <a href="#">
                           Turismo Sustentable</a></li>
                       <li>
-                        <!-- <a href="portfolio-detail.html"> -->
                         <a href="#">
                           Planificación Turística</a></li>
-                    </ul>
+                    </ul> -->
                   </li>
-                  <li>
+                  <li class="active" id="liContacto">
                     <!-- <a href="contact.html"> -->
-                    <a href="#">
-                      <i class="icon-envelope-alt"></i> Contacto</a>
+                    <a>
+                      <i class="icon-envelope-alt"></i> Contacto
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -121,11 +121,9 @@
     </section>
     <section id="maincontent">
       <div class="container">
-
-        <div class="row">
+        <div class="row" id="divSomos">
           <div class="span12">
             <div class="call-action">
-
               <div class="text">
                 <h2>Somos Plural</h2>
                 <p>Una consultora especializada en la planificación, la gestión y el
@@ -138,26 +136,26 @@
                 <p>Buscamos crear las condiciones para la conformación de espacios turísticos
                   inteligentes, basados en esquemas colaborativos donde la calidad, la
                   innovación, la accesibilidad y la sustentabilidad son ejes estratégicos.</p>
-                <p>Buscamos soluciones a medida de cada proyecto en el que trabajamos,
+                <p>Generamos soluciones a medida de cada proyecto en el que trabajamos,
                   superándonos permanentemente. Esa es nuestra pasión.</p>
               </div>
-              <div class="cta">
+              <!-- <div class="cta">
                 <a class="btn btn-large btn-theme" href="#">
                   <i class="icon-plane icon-white"></i> Ver más </a>
-              </div>
+              </div> -->
 
             </div>
             <!-- end tagline -->
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="divAreasTrabajo">
           <div class="span3 features e_pulse">
             <img src="assets/img/plural-calidad.jpg" alt="" />
             <div class="box">
               <div class="divcenter">
-                <a href="#"><i class="icon-circled icon-48 icon-magic active icon"></i></a>
-                <h4>Calidad Turística</h4>
+                <a href="#"><i class="icon-circled active icon-48 icon-star icon"></i></a>
+                <h4>Calidad </br>Turística</h4>
               </div>
             </div>
           </div>
@@ -166,8 +164,8 @@
             <img src="assets/img/plural-experienciencias.jpg" alt="" />
             <div class="box">
               <div class="divcenter">
-                <a href="#"><i class="icon-circled icon-48 icon-briefcase icon"></i></a>
-                <h4>Co-creación de Experiencias</h4>
+                <a href="#"><i class="icon-circled active icon-48 icon-group icon"></i></a>
+                <h4>Co-creación de </br>Experiencias</h4>
               </div>
             </div>
           </div>
@@ -176,8 +174,8 @@
             <img src="assets/img/plural-sustentabilidad.jpg" alt="" />
             <div class="box">
               <div class="divcenter">
-                <a href="#"><i class="icon-circled icon-48 icon-cogs icon"></i></a>
-                <h4>Hacia un Turismo Sustentable</h4>
+                <a href="#"><i class="icon-circled active icon-48 icon-leaf icon"></i></a>
+                <h4>Hacia un Turismo </br>Sustentable</h4>
               </div>
             </div>
           </div>
@@ -186,8 +184,8 @@
             <img src="assets/img/plural-planificacion.jpg" alt="" />
             <div class="box">
               <div class="divcenter">
-                <a href="#"><i class="icon-circled icon-48 icon-bullhorn icon"></i></a>
-                <h4>Planificación Turística</h4>
+                <a href="#"><i class="icon-circled active icon-48 icon-cogs icon"></i></a>
+                <h4>Planificación </br>Turística</h4>
               </div>
             </div>
           </div>
@@ -198,7 +196,7 @@
  ================================================== -->
     <footer class="footer">
       <div class="container">
-        <div class="row">
+        <div class="row" id="divContacto">
           <div class="span4">
             <div class="widget">
               <h5>Contáctenos</h5>
