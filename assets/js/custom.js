@@ -28,13 +28,13 @@ jQuery(document).ready(function($) {
   $('#liAreasTrabajo').click(function() {
     $("html, body").animate({
       scrollTop: $("#divAreasTrabajo").offset().top
-    }, 800);
+    }, 1000);
     return false;
   });
   $('#liContacto').click(function() {
     $("html, body").animate({
       scrollTop: $("#divContacto").offset().top
-    }, 800);
+    }, 1200);
     return false;
   });
 
