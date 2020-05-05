@@ -39,9 +39,33 @@ jQuery(document).ready(function($) {
   });
 
 
+  // accordion
+  $('#accordionVer').on('show', function(e) {
+    var btnVer = $(e.currentTarget.ownerDocument).find("#btnVer");
+    btnVer.html(btnVer.html().replace("más", "menos"));
+    // if (btnVer.text() === "Ver más"){
+    //   btnVer.text("Ver menos");
+    // } else {
+    //   btnVer.text("Ver más");
+    // }    
+    // $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+    // $(e.target).prev('.accordion-heading').find('.accordion-toggle i').removeClass('icon-plus');
+    // $(e.target).prev('.accordion-heading').find('.accordion-toggle i').addClass('icon-minus');
+  });
+
+  $('#accordionVer').on('hide', function(e) {    
+    var btnVer = $(e.currentTarget.ownerDocument).find("#btnVer");
+    btnVer.html(btnVer.html().replace("menos", "más"));
+    //btnVer.text("Ver más");
+    // $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+    // $(this).find('.accordion-toggle i').not($(e.target)).removeClass('icon-minus');
+    // $(this).find('.accordion-toggle i').not($(e.target)).addClass('icon-plus');
+  });
+
 
   // accordion
   $('.accordion').on('show', function(e) {
+    console.log('Accordion', e);
     $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
     $(e.target).prev('.accordion-heading').find('.accordion-toggle i').removeClass('icon-plus');
     $(e.target).prev('.accordion-heading').find('.accordion-toggle i').addClass('icon-minus');
@@ -82,7 +106,7 @@ jQuery(document).ready(function($) {
       "text": el.text()
     }).appendTo("nav select");
     //el.click();
-    console.log("ID: ", el.attr("id"));
+    //console.log("ID: ", el.attr("id"));
   });
 
   // To make dropdown actually work

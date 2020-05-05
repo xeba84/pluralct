@@ -7,8 +7,10 @@
 
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
-@import url('overwrite.css');
 @import url('animate.css');
+
+@import url('overwrite.css');
+/* @import "overwrite.css";  */
 
 /* ====================================== */
 
@@ -55,11 +57,19 @@ a i:hover {
 }
 */
 
+/*from Override because import is not working*/
+/* .accordion-group {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border: 0px;
+	margin: 0px;
+} */
+
 /* custom template style */
 .well {
 	overflow:hidden;
 }
-
 
 .well.well-primary {
 	background: #009cea;

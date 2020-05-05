@@ -1911,6 +1911,8 @@ a.thumbnail:hover {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  border: 0px;
+  margin: 0px;
 }
 
 .accordion-heading {
