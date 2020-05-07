@@ -2352,7 +2352,8 @@ section#subintro{
 		padding-top:0;
 	}
 	.nav li.active a {
-		font-size: 11px;
+		padding: 5px;
+		font-size: 10px;
 	}	
 	
 	/* div nav ul a {
